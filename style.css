@@ -5,3 +5,27 @@ body {
 input {
   margin: 5px;
 }
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+form fieldset div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+}
+
+form fieldset div label {
+    font-weight: bold;
+}
+
+form fieldset div textarea {
+    border-color: black;
+}
+
+.button {
+    padding-right: 85%;
+}

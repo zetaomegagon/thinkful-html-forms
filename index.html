@@ -8,11 +8,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
       type="text/css"
-    />
+      />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <main></main>
-  </body>
+    <main>
+
+      <form>
+	<fieldset>
+	  
+	  <div>
+	    <label for="name">Name:</label>
+	    <input id="name" type="text" name="name" required/>
+	  </div>
+
+	  <div>
+	    <label for="email">Email:</label>
+	    <input id="email" type="text" name="email" pattern="[a-zA-Z0-9_-]+[\+]{0,1}[a-zA-Z0-9_-]*\@[a-z]\.[a-z]{3}" required/>
+	  </div>
+
+	  <div>
+	    <label for="message">Message:</label>
+	    <textarea id="message" name="message" maxlength="300" required></textarea>
+	  </div>
+	  
+	  <div class="button">
+	    <button type="submit">Submit</button>
+	  </div>
+	  
+	</fieldset>
+      </form>
+
+</main>
+</body>
 </html>
